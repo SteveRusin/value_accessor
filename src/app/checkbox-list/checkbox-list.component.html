@@ -1,0 +1,9 @@
+<ng-container *ngFor="let option of options">
+  <label style="display: block;">
+    {{option.label}}
+    <input type="checkbox"
+           [id]="option.id"
+           [checked]="isChecked(option)"
+           (change)="onChange(option)">
+  </label>
+</ng-container>
